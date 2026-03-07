@@ -1,0 +1,27 @@
+[project]
+name = "sde_team"
+version = "0.1.0"
+description = "sde_team using crewAI"
+authors = [{ name = "Mathanbabu Kaliappan", email = "sakthikaliappan7797@gmail.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]==1.9.3"
+]
+
+[project.scripts]
+sde_team = "sde_team.main:run"
+run_crew = "sde_team.main:run"
+train = "sde_team.main:train"
+replay = "sde_team.main:replay"
+test = "sde_team.main:test"
+run_with_trigger = "sde_team.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+
+[storage]
+cache-dir = 'D:\1.Python\UV_CACHE'
