@@ -1,3 +1,9 @@
+---
+title: sde_team_agent
+app_file: D:\4.Data Wrangling\Projects\sde_team\output\03-08-2026_18-19\app.py
+sdk: gradio
+sdk_version: 5.14.0
+---
 # SdeTeam Crew
 
 Welcome to the SdeTeam Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.

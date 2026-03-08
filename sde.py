@@ -1,5 +1,5 @@
 import gradio as gr
-from accounts import Account, get_share_price
+from output.accounts import Account, get_share_price
 
 demo = Account("user1", 0.0)
 
