@@ -6,12 +6,8 @@ beautifulsoup4==4.12.3
 crewai==1.9.3
 fastapi==0.115.6
 huggingface-hub==0.25.2
-numpy==1.26.4
-pandas==2.2.3
 pydantic==2.11.9
 requests==2.32.3
-scipy==1.13.1
-sqlalchemy==2.0.36
 tiktoken>=0.8.0,<1.0.0
 uvicorn==0.32.1
 chromadb>=1.1.0,<1.2
