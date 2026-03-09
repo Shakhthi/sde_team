@@ -1,6 +1,6 @@
 ---
 title: sde_team_agent
-app_file: D:\4.Data Wrangling\Projects\sde_team\output\03-08-2026_18-19\app.py
+app_file: app.py
 sdk: gradio
 sdk_version: 5.14.0
 ---
