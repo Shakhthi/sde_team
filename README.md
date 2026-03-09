@@ -1,60 +1,129 @@
 ---
-title: sde_team_agent
+title: Advanced Account Management System
 app_file: app.py
 sdk: gradio
 sdk_version: 5.14.0
 ---
-# SdeTeam Crew
 
-Welcome to the SdeTeam Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+# Advanced Account Management System
 
-## Installation
+The **SDE_team project** is not just another app — it is a fully agentic AI system architected by the SDE_team collective. Every component, from orchestration to reproducibility, has been designed to showcase how autonomous agents can collaborate, delegate tasks, and generate meaningful outputs in real-world workflows. This project embodies the team’s vision of building scalable, intelligent, and reliable AI agents that can transform data and software engineering practices.  
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+By combining **crewAI**, modern frameworks, and reproducible environments, SDE_team demonstrates how agent-based systems can move beyond prototypes into production-ready solutions. It is both a technical showcase and a creative statement: proof that AI agents, when thoughtfully designed, can work together like a true team.
 
-First, if you haven't already, install uv:
 
+## ✨ Features
+- Multi-agent orchestration with **crewAI**
+- Configurable agents and tasks via YAML files
+- Reproducible workflows using **UV** for dependency management
+- Hugging Face Space integration with **Gradio** UI
+- Scalable and reliable solutions for data & software engineering
+
+---
+
+## Usage
+
+1. **Create Account**: Start by creating an account with an initial deposit.
+2. **Manage Funds**: Deposit or withdraw money as needed.
+3. **Trade Stocks**: Enter stock symbols and quantities to buy or sell shares.
+4. **Monitor Portfolio**: Check your current holdings, total value, and profit/loss.
+5. **Review History**: Access a complete log of all transactions.
+
+## Technology Stack
+
+- **Frontend**: Gradio (for the web interface)
+- **Backend**: Python with custom account management classes
+- **Data**: Real-time stock prices via external API integration
+- **Deployment**: Hugging Face Spaces
+
+## 📦 Installation
+Ensure you have **Python >=3.10, <3.14** installed.
+
+1. Install [uv](https://github.com/astral-sh/uv):
+   ```bash
+   pip install uv
+   ```
+
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/Shakhthi/sde_team.git
+   cd sde_team
+   ```
+
+3. Install dependencies:
+   ```bash
+   uv pip install -r requirements.txt
+   ```
+
+(Optional) Lock dependencies:
+   ```bash
+   crewai install
+   ```
+
+---
+
+## ⚙️ Configuration
+- Add your `OPENAI_API_KEY` to a `.env` file.
+- Define agents in `src/sde_team/config/agents.yaml`.
+- Define tasks in `src/sde_team/config/tasks.yaml`.
+- Customize logic/tools in `src/sde_team/crew.py`.
+- Add custom inputs in `src/sde_team/main.py`.
+
+---
+
+## ▶️ Running the Project
+Start your crew of AI agents:
 ```bash
-pip install uv
+crewai run
 ```
 
-Next, navigate to your project directory and install the dependencies:
+This will initialize the **SdeTeam Crew** and execute tasks as defined in your configuration.  
+By default, it generates a `report.md` with research on LLMs.
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+---
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+## 🧠 Understanding Your Crew
+- Agents are defined in `config/agents.yaml` with unique roles and tools.
+- Tasks are defined in `config/tasks.yaml` to guide collaboration.
+- The crew executes tasks collectively, producing reproducible outputs.
 
-- Modify `src/sde_team/config/agents.yaml` to define your agents
-- Modify `src/sde_team/config/tasks.yaml` to define your tasks
-- Modify `src/sde_team/crew.py` to add your own logic, tools and specific args
-- Modify `src/sde_team/main.py` to add custom inputs for your agents and tasks
+---
 
-## Running the Project
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+## 📜 License
+This project is open-source under the MIT License.
 
-```bash
-$ crewai run
-```
+---
 
-This command initializes the sde_team Crew, assembling the agents and assigning them tasks as defined in your configuration.
+**Let’s create wonders together with the power and simplicity of crewAI.**
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
 
-## Understanding Your Crew
+This README highlights your project’s purpose, setup, and usage in a recruiter/client-friendly way while staying concise and professional.  
 
-The sde_team Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+Would you like me to also craft a **short tagline + badges section** (e.g., Python version, Hugging Face Space link, build status) so your README looks visually engaging at the top?
 
-## Support
 
-For support, questions, or feedback regarding the SdeTeam Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
 
-Let's create wonders together with the power and simplicity of crewAI.
+## Deployment
+
+This app is configured for deployment on Hugging Face Spaces. The `app.py` file serves as the entry point, and dependencies are listed in `requirements.txt`.
+
+## 🤝 Support
+- 📖 Documentation [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2FShakhthi%2Fsde_team%2Fwiki")
+- 💬 Join our Discord community
+- 🛠️ Open issues or pull requests on GitHub
+
+---
+
+## 📬 Contact
+
+Recruiters or anyone interested in collaborating are always welcome to reach out:
+
+- **Email:** [MK](sakthikaliappan7797.com)  
+- **LinkedIn:** [Mathanbabu Kaliappan](https://www.linkedin.com/in/mathanbabu-kaliappan-58b7171a3/)
+- **Gradio app:** [MK's Alter Ego]( https://huggingface.co/spaces/Shakhthi/sde_team_agent) 
+
+Happy to chat about opportunities, ideas, or feedback on this project – let’s connect!
+Happy hacking!
+
+**– MK**
