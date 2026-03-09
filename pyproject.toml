@@ -26,6 +26,7 @@ dependencies = [
     "litellm>=1.74.0,<1.75.2",
     "apscheduler>=3.11.2",
     "gradio>4.7.0,<5.24.0",
+    "scipy>=1.15.3",
 ]
 
 
